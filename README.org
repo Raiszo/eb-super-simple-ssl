@@ -1,0 +1,12 @@
+#+TITLE: eb-super-simple-ssl
+#+AUTHOR: raiszo
+#+STARTUP: indent
+#+OPTIONS: toc:nil num:nil H:5
+
+Super simple apps deployed on ElasticBeanstalk (php for now) as single instance with SSL and no ALB
+
+
+Just putting in a repo the commands from this [[https://medium.com/edataconsulting/how-to-get-a-ssl-certificate-running-in-aws-elastic-beanstalk-using-certbot-6daa9baa3997][super helpfull article]] with some modifications.
+
+* Instructions
+For testing and demostrations modify ./.platform/hooks/postdeploy/00_get_certificate.sh replacing DOMAIN and EMAIL for valid ones, then zip it and deploy it manually to elasticBeanstalk. Or you could copy .ebextensions and .platform to your own projects.
