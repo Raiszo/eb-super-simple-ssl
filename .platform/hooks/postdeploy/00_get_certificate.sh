@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# remember to replace DOMAIn and EMAIL
-sudo certbot -n -d DOMAIN --nginx --agree-tos --email EMAIL
+# remember to replace DOMAIN and EMAIL
+sudo certbot -n -d testing-eb.prestamype.co --nginx --agree-tos --email echoquehuanca@prestamype.com
